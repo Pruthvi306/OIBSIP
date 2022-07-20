@@ -8,7 +8,9 @@ public void windowActivated(WindowEvent e) {  }
 public void windowDeactivated(WindowEvent e) {  }
 public void windowIconified(WindowEvent e) {  }
 public void windowDeiconified(WindowEvent e) {  }
-public void windowClosing(WindowEvent e) {   System.exit(0); }
+public void windowClosing(WindowEvent e) {  
+System.exit(0); 
+}
 public void windowClosed(WindowEvent e) {  }
 public void windowOpened(WindowEvent e) {  }
 TextArea t1;
@@ -39,7 +41,9 @@ t1.setText(rs.getString(1));
 c1.setLabel(rs.getString(2));
 c2.setLabel(rs.getString(3));
 c3.setLabel(rs.getString(4));
-}catch(Exception e) { System.out.println(e); } 
+}catch(Exception e) { 
+System.out.println(e);
+} 
 }
 if(ae.getSource()== b1)		// Submit
 {
@@ -61,14 +65,10 @@ System.out.println("ANS IS " + k);
 System.out.println("J IS " + j);
 System.out.println(marks);
 rs.next();
-}catch(Exception e) { System.out.println(e); } 
-
-
-
-
+}catch(Exception e) { 
+System.out.println(e);
+} 
 }
-
-
 }
 sample()
 {
@@ -77,7 +77,9 @@ Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 c= DriverManager.getConnection( "jdbc:odbc:abc","root","root");
 s=c.createStatement();
 rs= s.executeQuery("select * from exam");
-}catch(Exception e) { System.out.println(e); }
+}catch(Exception e) { 
+System.out.println(e); 
+}
 b1= new Button("Submit");
 b2= new Button("Start");
 b1.addActionListener(this);
